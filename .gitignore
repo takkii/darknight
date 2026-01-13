@@ -35,3 +35,8 @@ darknight-*.tar
 npm-debug.log
 /assets/node_modules/
 
+# Ignore Elixir plugin for RubyMine.
+/.idea/*
+
+# Ignore mix.lock dependency librarys.
+mix.lock
