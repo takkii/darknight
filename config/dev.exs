@@ -3,7 +3,7 @@ import Config
 # Configure your database
 config :darknight, Darknight.Repo,
   username: "postgres",
-  password: "postgres",
+  password: "rubyist1122",
   hostname: "localhost",
   database: "darknight_dev",
   stacktrace: true,
