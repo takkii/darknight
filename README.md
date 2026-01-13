@@ -1,6 +1,8 @@
 # Darknight
 
 > Wiki is [here](https://github.com/takkii/darknight/wiki/manual).
+>
+> development status: default composition.
 
 To start your Phoenix server:
 
