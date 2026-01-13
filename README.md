@@ -1,5 +1,7 @@
 # Darknight
 
+> Wiki is [here](https://github.com/takkii/darknight/wiki/manual).
+
 To start your Phoenix server:
 
 * Run `mix setup` to install and setup dependencies
