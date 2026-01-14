@@ -2,7 +2,7 @@
 
 > Wiki is [here](https://github.com/takkii/darknight/wiki/manual).
 >
-> development status: Start up, hello world page viewing.
+> development status: Applicable, overdrive style.
 
 To start your Phoenix server:
 
