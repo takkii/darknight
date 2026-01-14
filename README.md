@@ -2,7 +2,7 @@
 
 > Wiki is [here](https://github.com/takkii/darknight/wiki/manual).
 >
-> development status: default composition.
+> development status: Start up, hello world page viewing.
 
 To start your Phoenix server:
 
