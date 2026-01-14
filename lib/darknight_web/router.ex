@@ -17,7 +17,7 @@ defmodule DarknightWeb.Router do
   scope "/", DarknightWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    get "/", HomeController, :dark
   end
 
   # Other scopes may use custom stacks.
