@@ -2,7 +2,7 @@
   <br />
   <h1><p>Darknight</p></h1>
   <br />
-  <p>Status: esbuild and tailwindcss have been applied.</p>
+  <p>Status: layout adjustment.</p>
   <br />
   <p>Wiki is <a href="https://github.com/takkii/darknight/wiki/common">here</a>.</p>
   <h5><p>Run mix setup to install and setup dependencies</p></h3>
