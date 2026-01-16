@@ -32,10 +32,11 @@ defmodule DarknightWeb.Plug.EnsureAuthorized do
   end
 
   defp authorized?(user, controller, action) do
-    if authorized?(user, controller, action) < 4 do
-    {:ok, %{reason: "Permissions"}}
+    if authorized?(user, controller, action) < 4 && !authorized?(user, controller, action) do
+      {:ok, %{reason: "Permissions"}}
     else
-    {:error, %{reason: "Access Denied"}}
+      {:error, %{reason: "Access Denied"}}
+      raise ArgumentError, message: "the argument value is invalid"
     end
   end
 end
