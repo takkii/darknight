@@ -7,7 +7,7 @@ defmodule DarknightWeb.HomeController do
 
   def controller() do
     quote do
-      use Phoenix.Controller, namespace: MyApp
+      use Phoenix.Controller, namespace: DarknightWeb
       import Plug.Conn
       alias DarknightWeb.Router.Helpers, as: Routes
 
