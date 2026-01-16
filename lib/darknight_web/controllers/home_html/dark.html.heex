@@ -37,12 +37,13 @@
         </nav>
     </div>
     <div class="container">
+        <div class="card">
         <div align="center">
             <div class="alert">
-                <h1><p class="text-red-500 font-bold text-2xl">Welcome to overdrive start pages.</p></h1>
+                <h1><p class="text-red-500 font-bold text-2xl">Welcome to overdrive projects.</p></h1>
             </div>
             <p><img src="images/hokuhoku.gif" alt="ホクホクにゃんこ"></p>
-            <div class="card">
+        </div>
                 <h1><a name="youtube"><p class="text-red-500 font-bold text-2xl">
                             <a href="https://youtu.be/xRNDvD-qq1c?si=BKFNXwAC71uCUxp2">.netfileの構成、neovim/goneovim動作状況</a>
                         </p></a></h1>
@@ -50,6 +51,7 @@
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="card">
                 <div class="alert">
                     <h3>
                         <p>2025/11/03、現時点で人気のある私の※1 DTCL動画です。</p>
@@ -126,7 +128,8 @@
                     alert("見つかりませんでした。");
                 }
             </script>
-            <br />
+            <div class="card">
+            <div class="alert">
             <div align='right'>
                 <div class="font-color-blue-bold"><h5> 単語があるかないか検索🔎 </h5></div>
                 <br />
@@ -136,15 +139,14 @@
                     <input type="submit" value="検索">
                 </form>
             </div>
-            <br />
-            <div class="card">
+            </div>
                 <a name="copy"><p id="cpr">Copyright &copy; 2025 Takayuki Kamiyama.</p></a>
                 <script>
                     OneDay = new Date();
                     OneYear = this.OneDay.getFullYear();
 
                     const cpr_2025 = document.getElementById("cpr");
-                    cpr_2025.innerHTML = "Copyright &copy; 2025-" + OneYear + " Takayuki Kamiyama.";
+                    cpr_2025.innerHTML = "&copy; 2025-" + OneYear + " Takayuki Kamiyama.";
                 </script>
             </div>
         </div>
