@@ -31,8 +31,11 @@ defmodule DarknightWeb.Plug.EnsureAuthorized do
     |> Enum.uniq_by(&(&1[:controller] <> "." <> &1[:action]))
   end
 
-  defp authorized?(conn, controller, action) do
-    controller = conn |> Phoenix.Controller.controller_module() |> to_string()
-    action = conn |> Phoenix.Controller.action_name() |> Atom.to_string()
+  defp authorized?(user, controller, action) do
+    if authorized?(user, controller, action) < 4 do
+    {:ok, %{reason: "Permissions"}}
+    else
+    {:error, %{reason: "Access Denied"}}
+    end
   end
 end
