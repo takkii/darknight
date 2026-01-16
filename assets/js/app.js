@@ -23,7 +23,6 @@ import "phoenix_html"
 import {Socket} from "phoenix"
 import {LiveSocket} from "phoenix_live_view"
 import {hooks as colocatedHooks} from "phoenix-colocated/darknight"
-import topbar from "../vendor/topbar"
 
 const csrfToken = document.querySelector("meta[name='csrf-token']").getAttribute("content")
 const liveSocket = new LiveSocket("/live", Socket, {
@@ -80,3 +79,28 @@ if (process.env.NODE_ENV === "development") {
         window.liveReloader = reloader
     })
 }
+
+/**
+ * Updated by Takayuki Kamiyama on 2026/01/02.
+ * Team 'Red Eyes, Black Dragon.'
+ */
+
+$(function () {
+    $('a[href^=#]').click(function () {
+        const speed = 400; // millisecond
+        let href = $(this).attr("href");
+        const target = $(href === "#" || href === "" ? 'html' : href);
+        $($.browser.safari ? 'body' : 'html').animate({
+            scrollTop: position
+        }, speed, 'swing');
+        let body = 'body';
+        const userAgent = window.navigator.userAgent.toLowerCase();
+        if (userAgent.indexOf('msie') > -1 || userAgent.indexOf('trident') > -1 || userAgent.indexOf("firefox") > -1) {
+            body = 'html';
+        }
+        $(body).animate({
+            scrollTop: position
+        }, speed, 'swing');
+        return false;
+    });
+});
