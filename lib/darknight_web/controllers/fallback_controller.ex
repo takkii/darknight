@@ -14,4 +14,16 @@ defmodule DarknightWeb.FallbackController do
     |> render( "#{ status }.html" )
 
   end
+
+  def controller() do
+    quote do
+      use Phoenix.Controller, namespace: DarknightWeb
+      import Plug.Conn
+      alias DarknightWeb.Router.Helpers, as: Routes
+
+      plug DarknightWeb.Plug.EnsureAuthorized
+
+      action_fallback DarknightWeb.FallbackController
+    end
+  end
 end
