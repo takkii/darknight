@@ -11,8 +11,7 @@ defmodule DarknightWeb.FallbackController do
     conn
     |> put_status( status )
     |> put_view( ErrorView )
-    |> render( "#{ status }.html" )
-
+    |> render( "error_html.ex" )
   end
 
   def controller() do
