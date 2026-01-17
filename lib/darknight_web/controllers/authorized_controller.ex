@@ -15,6 +15,7 @@ defmodule DarknightWeb.Plug.EnsureAuthorized do
     |> authorized?(controller, action)
     |> case do
          true -> conn
+         _ -> conn |> DarknightWeb.FallbackController.controller()
          _ -> conn |> DarknightWeb.FallbackController.call({:error, :forbidden})
        end
   end
